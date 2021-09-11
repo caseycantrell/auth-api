@@ -1,0 +1,32 @@
+##### USERS #####
+
+### CREATE
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Alfie",
+  "email": "alfieboi@gmail.com",
+  "password": "iamacat",
+  "password_confirmation": "iamacat" 
+}
+
+### SHOW
+GET http://localhost:3000/users/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzE0NzAwOTl9.vWfv0MCjMZYwifXIQCujECW6UHvKtauKYe6AM-IV0D4
+
+
+
+##### SESSIONS  #####
+
+### CREATE (login)
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "cantrellcasey@gmail.com",
+  "password": "ABC123"
+}
